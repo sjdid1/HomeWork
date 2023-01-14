@@ -10,10 +10,10 @@ int count = -N;
 if (N > 0)
 {
     while (count <= N)
-{
-  Console.WriteLine($"{count} ");
-  count++;  
-}
+    {
+        Console.WriteLine($"{count} ");
+        count++;
+    }
 }
 else
 {
