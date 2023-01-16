@@ -11,13 +11,9 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 
 if (numberA > numberB)
 {
-    int max = numberA;
-    int min = numberB;
-    Console.WriteLine($"max = {max}, min = {min}");
+    Console.WriteLine($"max = {numberA}, min = {numberB}");
 }
 else
 {
-    int max = numberB;
-    int min = numberA;
-    Console.WriteLine($"max = {max}, min = {min}");
+    Console.WriteLine($"max = {numberB}, min = {numberA}");
 }
