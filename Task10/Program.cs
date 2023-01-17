@@ -4,6 +4,8 @@
 // 782 -> 8
 // 918 -> 1
 
+/*   БЕЗ МЕТОДА
+
 Console.WriteLine("Введите число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
@@ -19,3 +21,19 @@ while (number > 99)
 int result = number % 10;
 
 Console.WriteLine($"Ответ {result}");
+
+*/
+
+//    С МЕТОДОМ
+
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int digitNumber = DigitNumber(number);
+Console.WriteLine($"Ответ: {digitNumber} ");
+
+int DigitNumber(int num)
+{
+    int result = (number / 10);
+    return result % 10;
+}
