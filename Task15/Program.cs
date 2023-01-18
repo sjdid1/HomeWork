@@ -4,6 +4,9 @@
 // 7 -> да
 // 1 -> нет
 
+
+//      БЕЗ МЕТОДА
+/*
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -19,4 +22,23 @@ else if (number == array[5] | number == array[6])
 else
 {
     Console.WriteLine("нет");
+}
+*/
+//        С МЕТОДОМ
+
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number <= 0 || number >= 8)
+{
+    Console.WriteLine("Введите другое число");
+}
+else
+{
+bool Week (int num)
+{
+    return num == 6 || num == 7;
+}
+bool result = Week(number);
+Console.WriteLine(result ? "да" : "нет");
 }
