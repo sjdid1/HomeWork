@@ -32,6 +32,10 @@ int number = Convert.ToInt32(Console.ReadLine());
 int digitNumber = DigitNumber(number);
 Console.WriteLine($"Ответ: {digitNumber} ");
 
+if (number <= 99)
+{
+    Console.WriteLine("Введите трехзначное число");
+}
 int DigitNumber(int num)
 {
     int result = (number / 10);
