@@ -36,7 +36,7 @@ int ReturnNumberElements(int[] array, int min, int max)
     {
         if (array[i] >= min && array[i] <= max)
         {
-            numberElem ++;
+            numberElem++;
         }
     }
     return numberElem;

@@ -26,7 +26,7 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-int ParityNumbers(int[] array, int min, int max)
+int ParityNumbers(int[] array)
 {
     int sum = 0;
     for (int i = 0; i < array.Length; i++)
@@ -40,5 +40,5 @@ int ParityNumbers(int[] array, int min, int max)
 }
 int[] arrayRndInt = CreateArrayRndInt(6, 100, 999);
 PrintArray(arrayRndInt);
-int parityNumbers = ParityNumbers(arrayRndInt, 100, 999);
+int parityNumbers = ParityNumbers(arrayRndInt);
 Console.WriteLine($" -> {parityNumbers}");

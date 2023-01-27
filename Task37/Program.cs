@@ -29,15 +29,15 @@ void PrintArray(int[] array)
 
 int[] ArrayProductNumberFirstLast(int[] array)
 {
-int size = array.Length / 2;
-if (array.Length % 2 == 1) size += 1;
-int[] arrayNew = new int[size];
-for (int i = 0; i < size; i++)
-{
-arrayNew[i] = array[i] * array[array.Length - 1 - i];
-}
-if (array.Length % 2 == 1) arrayNew[arrayNew.Length - 1] = array[array.Length / 2];
-return arrayNew;
+    int size = array.Length / 2;
+    if (array.Length % 2 == 1) size += 1;
+    int[] arrayNew = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        arrayNew[i] = array[i] * array[array.Length - 1 - i];
+    }
+    if (array.Length % 2 == 1) arrayNew[arrayNew.Length - 1] = array[array.Length / 2];
+    return arrayNew;
 }
 
 int[] arr = CreateArrayRndInd(5, 0, 10);
