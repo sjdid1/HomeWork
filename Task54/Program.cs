@@ -25,7 +25,7 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
     return matrix;
 }
 
-void OrderArrayLines(int[,] array)
+void DescendingOrder(int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
   {
@@ -60,5 +60,5 @@ void PrintMatrix(int[,] matrix)
 int[,] matrix = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(matrix);
 Console.WriteLine();
-OrderArrayLines(matrix);
+DescendingOrder(matrix);
 PrintMatrix(matrix);
